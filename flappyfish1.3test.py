@@ -115,7 +115,7 @@ def start():#开始界面
         for event in pygame.event.get():
             if event.type == QUIT:
                 exit()
-            if event.type == MOUSEBUTTONDOWN:#如果鼠标按下
+            if event.type == MOUSEBUTTONDOWN :#如果鼠标按下
                 for button_name, button in buttons.items():
                     if button.is_over(event.pos):
                         button_pressed = button_name
